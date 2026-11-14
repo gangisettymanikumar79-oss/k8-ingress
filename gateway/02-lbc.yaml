@@ -1,0 +1,13 @@
+# my-alb-gateway.yaml
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: Gateway
+metadata:
+  name: my-alb-gateway
+  namespace: eks-gateway-demo
+spec:
+  scheme: internet-facing
+  ipAddressType: ipv4
+  listenerConfigurations:
+  - protocolPort: HTTPS:443
+    certificates:
+    - arn:aws:acm:us-east-1:218897024457:certificate/57151ce8-dfe0-49d4-9fd5-a0631482ab77
