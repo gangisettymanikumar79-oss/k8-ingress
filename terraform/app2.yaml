@@ -49,5 +49,5 @@ spec:
   serviceRef:
     name: app-2 # route traffic to the awesome-service
     port: 80
-  targetGroupARN: arn:aws:acm:us-east-1:218897024457:certificate/4bda3e84-89d9-4b58-b478-c7e8968b347c
+  targetGroupARN: arn:aws:elasticloadbalancing:us-east-1:218897024457:targetgroup/roboshop-dev-app2/593ca04aced69419
   targetType: ip
